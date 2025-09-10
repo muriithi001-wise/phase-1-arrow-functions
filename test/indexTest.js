@@ -3,7 +3,8 @@ require ( './helpers.js' );
 describe("index.js", () => {
   it("has a function expression called divide", () => {
     expect(divide).to.exist
-  })
+  
+  })})
 
   it("divide divides 2000 by 100", () => {
     let a = 2000
@@ -29,4 +30,16 @@ describe("index.js", () => {
     let b = 4
     expect(add(a,b)).to.equal(a+b)
   })
-})
+  function divide(a,b){
+    return a/b;
+
+}
+console.log(divide(2000,100));
+
+
+square=(x)=>x**x;
+let x=2
+console.log(square(2));
+
+add=(a,b)=>a+b;
+console.log(add(4,3));
